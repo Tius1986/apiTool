@@ -1,10 +1,28 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&family=PT+Sans+Narrow&family=Roboto&display=swap');
+
+h1 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-shadow: 10px 6px #222;
+    color: #458910;
 }
 
-body {
-    background-color: black;
-    color: white;
+h3 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 24px;
+}
+
+.d-flex {
+    gap: 10px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 7,
+  'opsz' 48
+}
+
+#search-img {
+    width: 20px;
 }
