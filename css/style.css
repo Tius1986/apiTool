@@ -23,6 +23,7 @@ h3 {
   'opsz' 48
 }
 
-#search-img {
+#search-img,
+#download-img {
     width: 20px;
 }
