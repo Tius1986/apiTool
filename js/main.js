@@ -52,17 +52,15 @@ function getData() {
 
     const url = document.getElementById('search').value
 
-    const selected = document.getElementById('limit-results')
-    const selectedValue = selected.options[selected.selectedIndex].value
-
-    let results = '1000000'
+    // const selected = document.getElementById('limit-results')
+    // const selectedValue = selected.options[selected.selectedIndex].value
+    // let results = ''
 
     // if (selectedValue !== 'all') {
-    //     results = `?_limit=${selectedValue}`
+    //     results = selectedValue
     // }
 
     axios
-        // .get(url.value + results)
         .get(url)
         .then(res => showOutput(res))
         .catch(err => {
@@ -86,7 +84,7 @@ function getData() {
 }
 
 function triggerActionBtn() {
-    
+
     const url = document.getElementById('search').value
 
     const splittedUrl = url.split('/')
